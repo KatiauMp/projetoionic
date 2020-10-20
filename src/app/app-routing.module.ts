@@ -41,6 +41,10 @@ const routes: Routes = [
   {
     path: 'clientes-atualizar/:id',
     loadChildren: () => import('./clientes-atualizar/clientes-atualizar.module').then( m => m.ClientesAtualizarPageModule)
+  },
+  {
+    path: 'clientes-excluir/:id',
+    loadChildren: () => import('./clientes-excluir/clientes-excluir.module').then( m => m.ClientesExcluirPageModule)
   }
 ];
 

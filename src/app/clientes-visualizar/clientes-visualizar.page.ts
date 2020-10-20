@@ -22,7 +22,7 @@ export class ClientesVisualizarPage implements OnInit {
     this.route.paramMap.subscribe(url=>{
       let id = url.get('id');
       
-      this.clienteServ.buscarPorId(id).subscribe(response=>{
+      this.clienteServ.buscaPorId(id).subscribe(response=>{
         this.cliente = response;
         
       })
